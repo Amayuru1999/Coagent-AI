@@ -31,7 +31,7 @@ class Schema(BaseModel):
         return self.name < other.name
 
 
-class DiscoveryQuery(Message):
+class   DiscoveryQuery(Message):
     """A message to discover agents in a namespace."""
 
     namespace: str = Field(..., description="The namespace to discover agents in.")
